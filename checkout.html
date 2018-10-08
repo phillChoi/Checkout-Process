@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+  <!-- multistep form -->
+<form id="msform" name="registration" method="post" action="">
+  <!-- progressbar -->
+  <ul id="progressbar">
+	<li class="active">Login</li>
+    <li>Shipping Details</li>
+    <li>Shipping Method</li>
+    <li>Payment Details</li>
+    <li>Confirm & Pay</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">Login</h2>
+    <h3 class="fs-subtitle">This is step 1</h3>
+	<input type="text" name="first-name" placeholder="Login" />
+	<input type="text" name="first-name" placeholder="Password" />
+	<input type="button" name="next" class="next action-button" value="Login" />
+	</br>	
+	<input type="button" value="Register"/>
+
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Confirm Your Shipping Details</h2>
+    <h3 class="fs-subtitle">This is step 2</h3>
+    <input type="text" name="first-name" placeholder="First Name" />
+    <input type="text" name="last-name" placeholder="Last Name" />
+    <input type="text" name="street-number" placeholder="Street Number" />
+    <input type="text" name="street-name" placeholder="Street Name" />
+    <input type="text" name="suburb" placeholder="Suburb" />
+    <input type="text" name="state" placeholder="State" />
+    <input type="text" name="post-code" placeholder="Post Code" />
+	<input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Confirm Your Shipping Method</h2>
+    <h3 class="fs-subtitle">This is step 3</h3>
+
+    <input type="radio" name="ship-standard" value="Standard Shipping"> Standard Shipping $7.60<br>
+    <input type="radio" name="ship-express" value="Express Shipping"> Express Shipping $11.15<br>
+
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Confirm Your Payment Details</h2>
+    <h3 class="fs-subtitle">This is step 4</h3>
+    <input type="text" name="card-number" placeholder="Card Number" />
+    <input type="text" name="card-expdate" placeholder="Expirary Date DD/MM/YYY" />
+    <input type="password" name="card-ccv" placeholder="CCV" />
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Confirm & Pay</h2>
+    <h3 class="fs-subtitle">This is the last step!</h3>
+    <img src="http://www.pngmart.com/files/1/Laptop-PNG-File.png" height="85" width="85"><br>
+    <p>1x Acer Aspire 5 - $995.00</p>
+    <p>Standard Shipping - $7.60</p>
+    <p>GST 5% - $50.13</p>
+    <p>Order Total - $1052.73</p>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Submit Order" />
+  </fieldset>
+</form>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+
+<script  src="js/registration.js"></script>
+</body>
+
+</html>
